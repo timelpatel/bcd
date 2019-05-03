@@ -1,0 +1,10 @@
+@import '../../../../asset/base.scss';
+
+.container__section {
+  background: $background-container-primary;
+  padding: 40px;
+
+  // &.alt {
+  //   background: $background-container-secondary;
+  // }
+}

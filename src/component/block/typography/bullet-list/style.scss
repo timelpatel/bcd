@@ -1,0 +1,19 @@
+@import '../../../../asset/base.scss';
+
+ul.list__bullet {
+  list-style: circle outside;
+  margin-bottom: 20px;
+  margin-left: 12px;
+
+  li {
+    color: $font-color-body;
+    font-family: $font-stack-normal;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 18px;
+  }
+
+  // ul {
+  //   list-style: circle outside;
+  // }
+}

@@ -1,0 +1,14 @@
+@import '../../../../asset/base.scss';
+
+.typography__code {
+  background: $background-code;
+  border-radius: 6px;
+  color: $font-color-code;
+  font-family: monospace, courier;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 18px;
+  margin-bottom: 20px;
+  padding: 12px 18px;
+  word-break: break-all;
+}

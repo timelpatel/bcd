@@ -1,0 +1,13 @@
+@import '../../../../asset/base.scss';
+
+.container__chic {
+    background: $background-chic;
+    padding: 60px 40px 40px;
+
+    h2 {
+        color: $color-black;
+    }
+    p {
+        color: $font-color-loud;
+    }
+}

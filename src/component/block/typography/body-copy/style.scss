@@ -1,0 +1,10 @@
+@import '../../../../asset/base.scss';
+
+.typography__body_copy {
+  color: $font-color-body;
+  font-family: $font-stack-normal;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}

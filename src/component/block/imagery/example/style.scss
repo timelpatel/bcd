@@ -1,0 +1,14 @@
+@import '../../../../asset/base.scss';
+
+.imagery__example {
+  border: 2px solid $color-white;
+  border-radius: 12px;
+  margin: 20px 0;
+  max-width: 600px;
+  padding: 30px;
+
+  /* Smartphones (portrait) ----------- */
+  @media screen and (max-width: 600px) {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,10 @@
+@import '../../../../asset/base.scss';
+
+.typography__subtle_title {
+  font-family: $font-stack-light;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}

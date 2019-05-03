@@ -1,0 +1,31 @@
+@import '../../../../asset/base.scss';
+
+.header__menu {
+  li {
+    display: inline;
+    font-family: $font-stack-light;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-left: 40px;
+
+    a {
+      color: $color-white;
+
+      &:hover {
+        border-bottom: 1px solid $color-white;
+        padding-bottom: 6px;
+      }
+    }
+  }
+}
+
+
+/* Smartphones (portrait) ----------- */
+@media screen and (max-width : 500px) {
+
+  .header__menu li {
+    font-size: 12px;
+    margin-left: 15px;
+  }
+
+}

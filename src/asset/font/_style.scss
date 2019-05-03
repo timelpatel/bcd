@@ -1,0 +1,42 @@
+// mixins
+@mixin font-face($font-family, $font-path) {
+  @font-face {
+    font-family: $font-family;
+    src: url('#{$font-path}.eot');
+    src: url('#{$font-path}.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}.woff') format('woff'),
+    url('#{$font-path}.ttf') format('truetype'),
+    url('#{$font-path}.svg##{$font-family}') format('svg');
+  }
+  /* Chrome for Windows rendering fix: http://www.adtrak.co.uk/blog/font-face-chrome-renderin */
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+      font-family: $font-family;
+        src: url('#{$font-path}.svg##{$font-family}') format('svg');
+      }
+  }
+}
+
+@include font-face(fontello, '/asset/font/fontello/fontello');
+@include font-face(heavydock11, '/asset/font/heavy-dock11/heavy_dock11');
+@include font-face(helveticaneueultralight, '/asset/font/helvetica-neue/helveticaneueultralight');
+
+// Vvariables
+$font-stack-title: heavydock11, 'Arial Black';
+$font-stack-normal: helveticaneue, helvetica, arial;
+$font-stack-light: helveticaneueultralight, 'helveticaneueultralight', helvetica, arial;
+
+a:link, a:visited {
+  color: $font-color-link;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  color: $font-color-link-hover;
+}
+
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}

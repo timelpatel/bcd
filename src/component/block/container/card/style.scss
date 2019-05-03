@@ -1,0 +1,19 @@
+@import '../../../../asset/base.scss';
+
+.container__card {
+  background: $color-white;
+  border-radius: 12px;
+  box-shadow: 0px 0px 12px -10px;
+  padding: 18px 24px 1px;
+
+  /* Smartphones (portrait) ----------- */
+  @media screen and (max-width: 600px) {
+    margin-bottom: 18px;
+  }
+}
+
+.content {
+  border-top: 1px dashed $color-cta-tint;
+  margin-top: 12px;
+  padding-top: 18px;
+}
