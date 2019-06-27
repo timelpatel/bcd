@@ -1,30 +1,16 @@
 import React from 'react'
-import Button__Primary from '../../../component/block/button/primary/index.jsx'
-import Container__Billboard from '../../../component/block/container/billboard/index.jsx'
 import Container__Section from '../../../component/block/container/section/index.jsx'
-import grid from '../../../asset/grid.scss';
-import Imagery__Example from '../../../component/block/imagery/example/index.jsx'
+import CTA__Welcome from '../../../component/module/cta/welcome/index.jsx'
+import grid from '../../../asset/grid.scss'
+import Imagery__Simple from '../../../component/block/imagery/simple/index.jsx'
 import Typography__Body_Copy from '../../../component/block/typography/body-copy/index.jsx'
-import Typography__Loud from '../../../component/block/typography/loud/index.jsx'
 import Typography__Section_Title from '../../../component/block/typography/section-title/index.jsx'
-import Typography__Sub_Loud from '../../../component/block/typography/sub-loud/index.jsx'
 import Typography__Sub_Heading from '../../../component/block/typography/sub-heading/index.jsx'
 
 const HomePage = () => (
   <React.Fragment>
 
-    <Container__Billboard>
-      <div className={grid.row}>
-        <div className={grid.col + ' ' + grid.col12}>
-          <Typography__Loud
-            text='Block Component Design'
-          />
-          <Typography__Sub_Loud
-            text='A complete structure for your digital components'
-          />
-        </div>
-      </div>
-    </Container__Billboard>
+    <CTA__Welcome />
 
     <Container__Section>
       <div className={grid.row}>
@@ -37,13 +23,13 @@ const HomePage = () => (
 
       <div className={grid.row}>
         <div className={grid.col + ' ' + grid.col10}>
-          <Imagery__Example>
+          <Imagery__Simple>
             <img
               alt='BCD overview'
               src='/asset/img/bcd-overview.png'
               width='100%'
             />
-          </Imagery__Example><br /><br />
+          </Imagery__Simple>
         </div>
       </div>
 

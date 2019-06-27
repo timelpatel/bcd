@@ -3,12 +3,11 @@
 .typography__loud {
   color: $font-color-loud;
   font-family: $font-stack-title;
-  font-size: 33px;
+  font-size: 27px;
   letter-spacing: 2px;
-  margin-bottom: 40px;
   text-transform: uppercase;
 
-  @media screen and (max-width: 415px) {
-    font-size: 27px;
+  @media screen and (min-width: 600px) {
+    font-size: 33px;
   }
 }

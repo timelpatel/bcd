@@ -4,9 +4,9 @@
   li {
     display: inline;
     font-family: $font-stack-light;
-    font-size: 16px;
+    font-size: 12px;
     letter-spacing: 2px;
-    margin-left: 40px;
+    margin-left: 15px;
 
     a {
       color: $color-white;
@@ -19,13 +19,12 @@
   }
 }
 
-
 /* Smartphones (portrait) ----------- */
-@media screen and (max-width : 500px) {
+@media screen and (min-width: 500px) {
 
   .header__menu li {
-    font-size: 12px;
-    margin-left: 15px;
+    font-size: 16px;
+    margin-left: 40px;
   }
 
 }

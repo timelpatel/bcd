@@ -37,7 +37,7 @@ const BehavioursPage = () => (
           />
 
           <Typography__Code>
-            /behaviours<br />
+            /behaviour<br />
             &nbsp;├── /functional<br />
             &nbsp;| &nbsp;&nbsp; └── /category-name<br />
             &nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; └── functional-name.js<br />

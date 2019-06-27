@@ -1,0 +1,17 @@
+.typography__loud {
+  margin-bottom: 40px;
+}
+
+.typography__sub_loud {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 600px) {
+  .button__primary {
+    margin-bottom: 40px;
+  }
+
+  .typography__loud {
+    margin-top: 60px;
+  }
+}

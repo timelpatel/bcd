@@ -5,11 +5,12 @@ import styles from './style.scss'
 const Button__Primary = (props) => (
 
   <NavLink
-    className={styles.button__primary}
-    to={props.href}>
-      <span>
-        {props.text}
-      </span>
+    className={`${styles.button__primary} ${styles.button__primary__on_color}`}
+    to={props.href}
+  >
+    <span>
+      {props.text}
+    </span>
   </NavLink>
 
 )

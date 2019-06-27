@@ -8,10 +8,6 @@ h1.typography__logo {
   margin-bottom: 40px;
   text-transform: uppercase;
 
-  @media screen and (max-width: 500px) {
-    font-size: 21px;
-  }
-
   a {
     color: $color-white;
   }

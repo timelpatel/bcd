@@ -3,6 +3,7 @@
 .button__primary {
   background: transparent;
   border: 1px solid $color-cta;
+  border-radius: 5px;
   color: $color-cta;
   display: inline-block;
   font-family: $font-stack-normal;
@@ -16,4 +17,8 @@
     border: 1px solid $color-cta;
     color: $color-white;
   }
+}
+
+.button__primary__on_color {
+  color: $color-white;
 }
