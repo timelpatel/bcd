@@ -18,9 +18,9 @@ const Header_Footer__Header = () => (
       <Typography__Header_Link
         links={
           [
-            { id: 1, href: '/components', text: 'Components' },
-            { id: 2, href: '/assets', text: 'Assets' },
-            { id: 3, href: '/behaviours', text: 'Behaviours' },
+            { id: 1, href: '/assets', text: 'Assets' },
+            { id: 2, href: '/behaviours', text: 'Behaviours' },
+            { id: 3, href: '/components', text: 'Components' },
           ]
         }
       />

@@ -1,0 +1,23 @@
+@import '../../../../asset/base.scss';
+
+.table__content {
+  border: 1px dashed $line-data;
+  margin-bottom: 24px;
+  text-align: left;
+
+  td, th {
+    color: $font-color-body;
+    padding: 12px 24px;
+  }
+
+  td {
+    font-family: $font-stack-normal;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  th {
+    background: $background-table-head;
+    border-bottom: 1px dashed $line-data;
+  }
+}

@@ -20,7 +20,7 @@ const CTA__Welcome = () => (
 
         <div className={layout.typography__sub_loud}>
           <Typography__Sub_Loud
-            text='A complete structure for your digital components'
+            text='A complete structure for digital applications'
           />
         </div>
 

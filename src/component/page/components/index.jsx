@@ -4,6 +4,8 @@ import Container__Chic from '../../../component/block/container/chic/index.jsx'
 import Container__Section from '../../../component/block/container/section/index.jsx'
 import grid from '../../../asset/grid.scss'
 import Imagery__Example from '../../../component/block/imagery/example/index.jsx'
+import Notification__Tip from '../../../component/block/notification/tip/index.jsx'
+import Table__Content from '../../../component/block/table/content/index.jsx'
 import Typography__Body_Copy from '../../../component/block/typography/body-copy/index.jsx'
 import Typography__Bullet_List from '../../../component/block/typography/bullet-list/index.jsx'
 import Typography__Code from '../../../component/block/typography/code/index.jsx'
@@ -22,17 +24,59 @@ const ComponentsPage = () => (
             text='Components'
           />
           <Typography__Body_Copy
-            text='The most important part of the BCD system, Components are the foundational infrastructure required to support the whole ecosystem.'
+            text='The Component library is the heart of the BCD ecosystem. It is split into two parts; Blocks and Modules. It is able to consume items from the other libraries - Assets and Behaviours.'
           />
         </div>
       </div>
     </Container__Chic>
 
     <Container__Section>
+      <div className={grid.row}>
+        <div className={grid.col + ' ' + grid.col10}>
+          <Typography__Section_Title
+            text='Library entries'
+          />
+
+          <Table__Content>
+            <thead>
+              <tr>
+                <th>Entry</th>
+                <th>Notes</th>
+                <th>Order</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Block</td>
+                <td>Single elements whos stlye we want to control independantly from other Blocks.</td>
+                <td>Category</td>
+              </tr>
+              <tr>
+                <td>Module</td>
+                <td>One or more Blocks to form a usable component on a page.</td>
+                <td>Category</td>
+              </tr>
+              <tr>
+                <td>Page</td>
+                <td>Pages (or views in single page applications) containing Components. Good place to consume Assets > Grid.</td>
+                <td>Name</td>
+              </tr>
+            </tbody>
+          </Table__Content>
+
+          <Notification__Tip
+            text='We recommend using at least Blocks and Modules from the Components section.'
+          />
+        </div>
+      </div>
+    </Container__Section>
+
+    <Container__Section>
     <div className={grid.row}>
         <div className={grid.col + ' ' + grid.col9}>
           <Typography__Body_Copy
-            text='To allow for flexibility, Blocks can be used within Blocks and Modules can be used within Modules. It is important that an component should only be modified at its source and changes filter down. For example, it would be bad practice to change the visual styling of a block after it was imported into a module; we want to ensure a single source of truth policy.'
+            text='To allow for flexibility, Blocks can be used within Blocks and Modules can be used within Modules. It is important that a component should only be modified at its source and changes filter down. For example, it would be bad practice to change the visual styling of a block after it was imported into a module; we want to ensure a single source of truth policy.'
           />
         </div>
       </div>
@@ -95,11 +139,13 @@ const ComponentsPage = () => (
             &nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ├── index.html<br />
             &nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; └── style.css<br />
             &nbsp;|<br />
-            &nbsp;└── /module<br />
-            &nbsp;&nbsp;&nbsp;&nbsp; └── /category-name<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; └── /module-name<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ├── index.html<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; └── layout.css
+            &nbsp;├── /module<br />
+            &nbsp;| &nbsp;&nbsp; └── /category-name<br />
+            &nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; └── /module-name<br />
+            &nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ├── index.html<br />
+            &nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; └── layout.css<br />
+            &nbsp;└── /page<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; └── page-name.html<br />
           </Typography__Code>
         </div>
       </div>
@@ -120,7 +166,7 @@ const ComponentsPage = () => (
           />
           <Typography__Code>
             div class='category_name__component_name'<br />
-            div class='button__primary'<br />
+            div class='button__primary'<br /><br />
             div class='category_name__component_name__variant'<br />
             div class='button__primary__large'
           </Typography__Code>
@@ -128,21 +174,26 @@ const ComponentsPage = () => (
           <Typography__Sub_Heading
             text='CSS'
           />
+          <Typography__Body_Copy
+            text='All CSS (SASS or LESS) are named style or layout. Block styles are naming style as they style the Block where as Module files are named layout as they should only be used for positioning.'
+          />
           <Typography__Code>
-            category_name__component_name.css<br />
-            button__primary.css
+            style.css<br />
+            .category_name__block_name &#123;<br /><br />&#125;<br /><br />
+            layout.css<br />
+            .category_name__module_name &#123;<br /><br />&#125;
           </Typography__Code>
 
           <Typography__Sub_Heading
             text='JavaScript'
           />
+          <Typography__Body_Copy
+            text='Scripting files specific to certain components should reference the component name used in the HTML and CSS. This is different to scripting files found in the Behaviours section as they are for generic use and have their own naming convention.'
+          />
           <Typography__Code>
             category_name__component_name.js<br />
             button__primary.js
           </Typography__Code>
-          <Typography__Body_Copy
-            text='Scripting files specific to certain components should reference the component name used in the HTML and CSS. This is different to scripting files found in the Behaviours section as they are for generic use and have their own naming convention.'
-          />
         </div>
       </div>
     </Container__Section>

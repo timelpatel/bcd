@@ -16,7 +16,7 @@ const HomePage = () => (
       <div className={grid.row}>
         <div className={grid.col + ' ' + grid.col10}>
           <Typography__Section_Title
-            text='BCD is a methodology to organise components into manageable elements. It ensures consistency whilst allowing flexibility for business requirements. Design language and naming conventions are downstreamed from the design community to software engineering, allowing for a seamless integration.'
+            text='BCD is a methodology to organise and manage components. It encourages consistency and provides complete control over each component idependently. The system is split into three libraries; Assets, Behaviours and Components (ABC).'
           />
         </div>
       </div>
@@ -36,30 +36,30 @@ const HomePage = () => (
       <div className={grid.row}>
         <div className={grid.col + ' ' + grid.col10}>
           <Typography__Sub_Heading
-            text='Components'
-          />
-          <Typography__Body_Copy
-            text='At the core of BCD, Components are formed using two key elements; Blocks and Modules. Each Component may also consume things from Assets and Behaviours.'
-          />
-
-          {/* <Button__Primary
-            href='/components'
-            text='More about Components'
-          /><br /><br /><br /> */}
-
-          <Typography__Sub_Heading
             text='Assets'
           />
           <Typography__Body_Copy
-            text='Assets are used within components, usually for styling purposes. They include Colours, Fonts and Icons. Components only use Assets defined in this section, which will encourage consistency in the visual design.'
+            text='Assets are used within components, usually for styling purposes. Think of assets as a brand styleguide. It includes colours, fonts and icons. Components only use Assets defined in this section, which will encourage branding consistency and reduce code duplication.'
           />
 
           <Typography__Sub_Heading
             text='Behaviours'
           />
           <Typography__Body_Copy
-            text='Behaviours define how a user will interact with the application. They help manage the user experience and control data into the system.'
+            text='Behaviours define how the application reacts to certain situations. This can touch many areas like user interactions and how data is handled. Think of it as every pre-defined action will have a particular response.'
           />
+
+          <Typography__Sub_Heading
+            text='Components'
+          />
+          <Typography__Body_Copy
+            text='At the core of BCD, Components are formed using two key elements; Blocks and Modules. Each Component may consume items from Assets and Behaviours, and used to create pages and views.'
+          />
+
+          {/* <Button__Primary
+            href='/components'
+            text='More about Components'
+          /><br /><br /><br /> */}
         </div>
       </div>
     </Container__Section>

@@ -1,0 +1,12 @@
+@import '../../../../asset/base.scss';
+
+.notification__tip {
+  background: lightsteelblue; // TODO change colour
+  border-radius: 5px;
+  color: $color-white;
+  display: inline-block;
+  font-family: $font-stack-normal;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 12px 18px;
+}

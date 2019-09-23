@@ -1,0 +1,11 @@
+@import '../../../../asset/base.scss';
+
+.button__tertiary {
+  color: $color-cta;
+  border-left: 2px solid $color-cta;
+  display: inline-block;
+  font-family: $font-stack-normal;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 6px 12px;
+}

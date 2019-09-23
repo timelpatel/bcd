@@ -2,6 +2,8 @@ import React from 'react'
 import Container__Chic from '../../../component/block/container/chic/index.jsx'
 import Container__Section from '../../../component/block/container/section/index.jsx'
 import grid from '../../../asset/grid.scss';
+import Notification__Tip from '../../../component/block/notification/tip/index.jsx'
+import Table__Content from '../../../component/block/table/content/index.jsx'
 import Typography__Body_Copy from '../../../component/block/typography/body-copy/index.jsx'
 import Typography__Code from '../../../component/block/typography/code/index.jsx'
 import Typography__Page_Title from '../../../component/block/typography/page-title/index.jsx'
@@ -17,11 +19,58 @@ const BehavioursPage = () => (
             text='Behaviours'
           />
           <Typography__Body_Copy
-            text='Behaviours allow us to define a set of expectations'
+            text='The Behaviours library covers all aspects of how we envisage behavioural expectations and helps to create a consistant experience.'
           />
         </div>
       </div>
     </Container__Chic>
+
+    <Container__Section>
+      <div className={grid.row}>
+        <div className={grid.col + ' ' + grid.col10}>
+          <Typography__Section_Title
+            text='Library entries'
+          />
+
+          <Table__Content>
+            <thead>
+              <tr>
+                <th>Entry</th>
+                <th>Notes</th>
+                <th>Order</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Functional</td>
+                <td>Various function helpers to be used wihtin Components.</td>
+                <td>Category</td>
+              </tr>
+              {/* <tr>
+                <td>Models</td>
+                <td>x</td>
+                <td>x</td>
+              </tr> */}
+              <tr>
+                <td>Motion &amp; Touch</td>
+                <td>Animation and gesture related experiences to be used within Components.</td>
+                <td>Category</td>
+              </tr>
+              <tr>
+                <td>Validation</td>
+                <td>User input validation to be used within Components.</td>
+                <td>Category</td>
+              </tr>
+            </tbody>
+          </Table__Content>
+
+          <Notification__Tip
+            text='Remember, you do not need to use all library entries. Just what you need in the application.'
+          />
+        </div>
+      </div>
+    </Container__Section>
 
     <Container__Section>
       <div className={grid.row}>

@@ -1,17 +1,15 @@
 import React from 'react'
-import Container__Card from '../../../component/block/container/card/index.jsx'
+import Button__Tertiary from '../../../component/block/button/tertiary/index.jsx'
 import Container__Chic from '../../../component/block/container/chic/index.jsx'
 import Container__Section from '../../../component/block/container/section/index.jsx'
 import grid from '../../../asset/grid.scss'
-import Imagery__Example from '../../../component/block/imagery/example/index.jsx'
 import { Link } from 'react-router-dom'
 import Typography__Body_Copy from '../../../component/block/typography/body-copy/index.jsx'
-import Typography__Bullet_List from '../../../component/block/typography/bullet-list/index.jsx'
+// import Typography__Bullet_List from '../../../component/block/typography/bullet-list/index.jsx'
 import Typography__Code from '../../../component/block/typography/code/index.jsx'
 import Typography__Page_Title from '../../../component/block/typography/page-title/index.jsx'
 import Typography__Section_Title from '../../../component/block/typography/section-title/index.jsx'
 import Typography__Sub_Heading from '../../../component/block/typography/sub-heading/index.jsx'
-import Typography__Subtle_Title from '../../../component/block/typography/subtle-title/index.jsx'
 
 const GettingStartedPage = () => (
   <React.Fragment>
@@ -33,7 +31,7 @@ const GettingStartedPage = () => (
       <div className={grid.row}>
         <div className={grid.col + ' ' + grid.col9}>
           <Typography__Section_Title
-            text='Add BCD Folders'
+            text='Add BCD folders'
           />
           <Typography__Body_Copy
             text='Let&#39;s start by creating some folders.'
@@ -173,10 +171,10 @@ const GettingStartedPage = () => (
             &nbsp;&nbsp;&nbsp;&nbsp; ├── helvetica.ttf<br />
             &nbsp;&nbsp;&nbsp;&nbsp; └── helvetica.woff
           </Typography__Code>
-
-          <Typography__Body_Copy>
-            <br />--> <Link to='/assets'>Learn more about Assets</Link> {/* make into a button? */}
-          </Typography__Body_Copy>
+          <Button__Tertiary
+            href='/assets'
+            text='Learn more about Assets'
+          />
         </div>
       </div>
     </Container__Section>
@@ -198,10 +196,11 @@ const GettingStartedPage = () => (
             import React from 'react'<br />
             import Button__Primary from '/src/component/block/button/primary/index.jsx'<br />
             import Input_Field__Text_Input from '/src/component/block/input-field/text-input/index.jsx'<br />
-            import styles from './style.scss'<br /><br />
+            import layout from './layout.scss'<br /><br />
             const Personal_Information__Name = (props) => (<br />
             &nbsp;&nbsp;&lt;Input_Field__Text_Input /&gt;<br />
             &nbsp;&nbsp;&lt;Button__Primary<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;className=&#125;layout.button&#126;<br />
             &nbsp;&nbsp;&nbsp;&nbsp;text='Submit'<br />
             &nbsp;&nbsp;/&gt;<br />
             )<br /><br />export default Personal_Information__Name
@@ -251,10 +250,10 @@ const GettingStartedPage = () => (
             &nbsp;&nbsp;/&gt;<br />
             )<br /><br />export default Personal_Information__Name
           </Typography__Code>
-
-          <Typography__Body_Copy>
-            <br />--> <Link to='/behaviours'>Learn more about Behaviours</Link> {/* make into a button? */}
-          </Typography__Body_Copy>
+          <Button__Tertiary
+            href='/behaviours'
+            text='Learn more about Behaviours'
+          />
         </div>
       </div>
     </Container__Section>

@@ -1,7 +1,10 @@
 import React from 'react'
+import Button__Tertiary_External from '../../../component/block/button/tertiary/external.jsx'
 import Container__Chic from '../../../component/block/container/chic/index.jsx'
 import Container__Section from '../../../component/block/container/section/index.jsx'
 import grid from '../../../asset/grid.scss';
+import Notification__Tip from '../../../component/block/notification/tip/index.jsx'
+import Table__Content from '../../../component/block/table/content/index.jsx'
 import Typography__Body_Copy from '../../../component/block/typography/body-copy/index.jsx'
 import Typography__Bullet_List from '../../../component/block/typography/bullet-list/index.jsx'
 import Typography__Code from '../../../component/block/typography/code/index.jsx'
@@ -21,11 +24,58 @@ const AssetPage = () => (
             text='Assets'
           />
           <Typography__Body_Copy
-            text='Assets allow us to moderate a strict branding policy across our application, by only allowing pre-defined values. These rules can be enforced at Engineering level using test scripts. Maybe Blocks do not accept hex colour values or font and icons can not be hardcoded into the styling file.'
+            text='The Asset library is a collection of styles and branding. Everything used to style components is defined here and components will only use these pre-defined values.'
           />
         </div>
       </div>
     </Container__Chic>
+
+    <Container__Section>
+      <div className={grid.row}>
+        <div className={grid.col + ' ' + grid.col10}>
+          <Typography__Section_Title
+            text='Library entries'
+          />
+
+          <Table__Content>
+            <thead>
+              <tr>
+                <th>Entry</th>
+                <th>Notes</th>
+                <th>Order</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Colour</td>
+                <td>Meaningful colour variables (including gradiants, shadows, etc) to be used within Components.</td>
+                <td>Category</td>
+              </tr>
+              <tr>
+                <td>Font</td>
+                <td>All font files required (.svg, tff, woff, etc). Good area to store font-face mixin and any other font-related requirements such as a hide-text class. Usually used in Components > Blocks > Typography but could be used in other Blocks too.</td>
+                <td>Name</td>
+              </tr>
+              <tr>
+                <td>Grid</td>
+                <td>Grid system for page layout. Variables used within Components and Pages.</td>
+                <td>Usage</td>
+              </tr>
+              <tr>
+                <td>Icon</td>
+                <td>Graphic files containing icon sets to be used within CSS styling.</td>
+                <td>Category</td>
+              </tr>
+            </tbody>
+          </Table__Content>
+
+          <Notification__Tip
+            text='Remember, you do not need to use all library entries. Just what you need in the application.'
+          />
+        </div>
+      </div>
+    </Container__Section>
 
     <Container__Section>
       <div className={grid.row}>
@@ -51,11 +101,13 @@ const AssetPage = () => (
             &nbsp;| &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp; └── font-name.woff<br />
             &nbsp;| &nbsp;&nbsp; └── /style.css<br />
             &nbsp;|<br />
-            &nbsp;└── /icon<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; └── /category-name<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; └── /icon-name<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ├── icon-name.png<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; └── icon-name.svg
+            &nbsp;├── /icon<br />
+            &nbsp;| &nbsp;&nbsp;&nbsp; └── /category-name<br />
+            &nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; └── /icon-name<br />
+            &nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ├── icon-name.png<br />
+            &nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; └── icon-name.svg<br />
+            &nbsp;|<br />
+            &nbsp;└── grid.css<br />
           </Typography__Code>
         </div>
       </div>
@@ -84,7 +136,7 @@ const AssetPage = () => (
         <div className={grid.col + ' ' + grid.col6}>
           <div className={grid.spaced}>
             <Typography__Code>
-              call-to-action.sass<br />
+              /asset/colour/call-to-action.sass<br /><br />
               $button-primary: <span className='example-primary'>#009900</span>;<br />
               $button-secondary: <span className='example-secondary'>#ff9900</span>;<br />
               $text-link: <span className='example-link'>#ff0000</span>;
@@ -95,7 +147,7 @@ const AssetPage = () => (
         <div className={grid.col + ' ' + grid.col6}>
           <div className={grid.spaced}>
             <Typography__Code>
-              notification.sass<br />
+              /asset/colour/notification.sass<br /><br />
               $error: <span className='example-error'>#ff0000</span>;<br />
               $success: <span className='example-success'>#009900</span>;<br />
               $warning: <span className='example-warning'>#ff9900</span>;
@@ -106,11 +158,36 @@ const AssetPage = () => (
 
       <div className={grid.row}>
         <div className={grid.col + ' ' + grid.col10}>
+          
+          <Notification__Tip
+            text='You can add all the variables into one single file, especially if the application is not particularly large.'
+          />
+
           <Typography__Sub_Heading
             text='Font'
           />
           <Typography__Body_Copy
-            text='Fonts are fairly self explanatory. Create a folder using the font name and add all the various font files within. These fonts can then be referenced in the style.css file in the fonts directory.'
+            text='Fonts are fairly self explanatory. Create a folder using the font name and add all the various font files within. These fonts can then be referenced in the style.css file in the font directory.'
+          />
+          <Typography__Code>
+            /asset/font/style.sass<br /><br />
+            $font-stack-title: 'Arial Black';<br />
+            $font-stack-normal: helvetica, arial;
+          </Typography__Code>
+          <Button__Tertiary_External
+            href='https://github.com/timelpatel/bcd/tree/master/src/asset/font/_style.scss'
+            text='See font example on Github'
+          />
+
+          <Typography__Sub_Heading
+            text='Grid'
+          />
+          <Typography__Body_Copy
+            text='The grid system code can be a single styling file in the root of the asset directory. Generally used in Pages but can also be used at Component level. Its wise to allow componenets to consume the full width of their container to allow for adaptive or responsive layouts.'
+          />
+          <Button__Tertiary_External
+            href='https://github.com/timelpatel/bcd/tree/master/src/asset/grid.scss'
+            text='See grid example on Github'
           />
 
           <Typography__Sub_Heading
