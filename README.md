@@ -1,2 +1,1 @@
-# BCD Library
-## Block Component Design
+# Infinity

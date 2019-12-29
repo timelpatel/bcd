@@ -16,7 +16,7 @@ const HomePage = () => (
       <div className={grid.row}>
         <div className={grid.col + ' ' + grid.col10}>
           <Typography__Section_Title
-            text='BCD is a methodology to organise and manage components. It encourages consistency and provides complete control over each component idependently. The system is split into three libraries; Assets, Behaviours and Components (ABC).'
+            text='Infinity Design is a methodology to organise and manage components. It encourages consistency and provides complete control over each component idependently. The system is split into three libraries; Assets, Behaviours and Components (ABC).'
           />
         </div>
       </div>
@@ -25,8 +25,8 @@ const HomePage = () => (
         <div className={grid.col + ' ' + grid.col10}>
           <Imagery__Simple>
             <img
-              alt='BCD overview'
-              src='/asset/img/bcd-overview.png'
+              alt='Infinity overview'
+              src='/asset/img/Infinity-overview.png'
               width='100%'
             />
           </Imagery__Simple>
@@ -53,7 +53,7 @@ const HomePage = () => (
             text='Components'
           />
           <Typography__Body_Copy
-            text='At the core of BCD, Components are formed using two key elements; Blocks and Modules. Each Component may consume items from Assets and Behaviours, and used to create pages and views.'
+            text='At the core of Infinity, Components are formed using two key elements; Blocks and Modules. Each Component may consume items from Assets and Behaviours, and used to create pages and views.'
           />
 
           {/* <Button__Primary

@@ -14,7 +14,7 @@ const CTA__Welcome = () => (
 
         <div className={layout.typography__loud}>
           <Typography__Loud
-            text='Block Component Design'
+            text='Infinity Design'
           />
         </div>
 

@@ -48,8 +48,8 @@ const AssetPage = () => (
 
             <tbody>
               <tr>
-                <td>Colour</td>
-                <td>Meaningful colour variables (including gradiants, shadows, etc) to be used within Components.</td>
+                <td>Color</td>
+                <td>Meaningful color variables (including gradiants, shadows, etc) to be used within Components.</td>
                 <td>Category</td>
               </tr>
               <tr>
@@ -92,7 +92,7 @@ const AssetPage = () => (
 
           <Typography__Code>
             /asset<br />
-            &nbsp;├── /colour<br />
+            &nbsp;├── /color<br />
             &nbsp;| &nbsp;&nbsp; └── /category-name.css<br />
             &nbsp;|<br />
             &nbsp;├── /font<br />
@@ -124,10 +124,10 @@ const AssetPage = () => (
           />
 
           <Typography__Sub_Heading
-            text='Colour'
+            text='Color'
           />
           <Typography__Body_Copy
-            text='Defining colours into useful categories is a nice way to make sure colours have meaningful names based on usage and not the colour itself. Lets take a look at some examples:'
+            text='Defining colors into useful categories is a nice way to make sure colors have meaningful names based on usage and not the color itself. Lets take a look at some examples:'
           />
         </div>
       </div>
@@ -136,10 +136,10 @@ const AssetPage = () => (
         <div className={grid.col + ' ' + grid.col6}>
           <div className={grid.spaced}>
             <Typography__Code>
-              /asset/colour/call-to-action.sass<br /><br />
-              $button-primary: <span className='example-primary'>#009900</span>;<br />
-              $button-secondary: <span className='example-secondary'>#ff9900</span>;<br />
-              $text-link: <span className='example-link'>#ff0000</span>;
+              /asset/color/call-to-action.sass<br /><br />
+              $color-primary: <span className='example-primary'>#009900</span>;<br />
+              $color-secondary: <span className='example-secondary'>#ff9900</span>;<br />
+              $color-link: <span className='example-link'>#ff0000</span>;
             </Typography__Code>
           </div>
         </div>
@@ -147,10 +147,10 @@ const AssetPage = () => (
         <div className={grid.col + ' ' + grid.col6}>
           <div className={grid.spaced}>
             <Typography__Code>
-              /asset/colour/notification.sass<br /><br />
-              $error: <span className='example-error'>#ff0000</span>;<br />
-              $success: <span className='example-success'>#009900</span>;<br />
-              $warning: <span className='example-warning'>#ff9900</span>;
+              /asset/color/notification.sass<br /><br />
+              $color-error: <span className='example-error'>#ff0000</span>;<br />
+              $color-success: <span className='example-success'>#009900</span>;<br />
+              $color-warning: <span className='example-warning'>#ff9900</span>;
             </Typography__Code>
           </div>
         </div>
@@ -175,7 +175,7 @@ const AssetPage = () => (
             $font-stack-normal: helvetica, arial;
           </Typography__Code>
           <Button__Tertiary_External
-            href='https://github.com/timelpatel/bcd/tree/master/src/asset/font/_style.scss'
+            href='https://github.com/timelpatel/Infinity/tree/master/src/asset/font/_style.scss'
             text='See font example on Github'
           />
 
@@ -186,7 +186,7 @@ const AssetPage = () => (
             text='The grid system code can be a single styling file in the root of the asset directory. Generally used in Pages but can also be used at Component level. Its wise to allow componenets to consume the full width of their container to allow for adaptive or responsive layouts.'
           />
           <Button__Tertiary_External
-            href='https://github.com/timelpatel/bcd/tree/master/src/asset/grid.scss'
+            href='https://github.com/timelpatel/Infinity/tree/master/src/asset/grid.scss'
             text='See grid example on Github'
           />
 
@@ -194,7 +194,7 @@ const AssetPage = () => (
             text='Icon'
           />
           <Typography__Body_Copy
-            text='Like Colours, Icons will be defined within meaningful category names based on usage. Let&#39;s take a look at some examples:'
+            text='Like colors, Icons will be defined within meaningful category names based on usage. Let&#39;s take a look at some examples:'
           />
         </div>
       </div>
