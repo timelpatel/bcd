@@ -8,7 +8,7 @@ const Header_Footer__Footer = () => (
     className='container'
   >
     <Typography__Body_Copy
-      text='Copyright © 2019 Time Lab Digital Ltd. All rights reserved.'
+      text='Copyright © 2020 Time Lab Digital Ltd. All rights reserved.'
     />
   </Container__Footer>
 

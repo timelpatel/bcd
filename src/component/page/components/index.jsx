@@ -24,7 +24,7 @@ const ComponentsPage = () => (
             text='Components'
           />
           <Typography__Body_Copy
-            text='The Component library is the heart of the Infinity ecosystem. It is split into two parts; Blocks and Modules. It is able to consume items from the other libraries - Assets and Behaviours.'
+            text='The Component library is the heart of the BCD ecosystem. It is split into two parts; Blocks and Modules. It is able to consume items from the other libraries - Assets and Behaviours.'
           />
         </div>
       </div>
@@ -397,7 +397,7 @@ const ComponentsPage = () => (
             text='Example: Telephone number component'
           />
           <Typography__Body_Copy
-            text='Let&#39;s look at how we would use Infinity to create a telephone number component.'
+            text='Let&#39;s look at how we would use BCD to create a telephone number component.'
           />
 
           <Typography__Sub_Heading

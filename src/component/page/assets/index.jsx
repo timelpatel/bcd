@@ -175,7 +175,7 @@ const AssetPage = () => (
             $font-stack-normal: helvetica, arial;
           </Typography__Code>
           <Button__Tertiary_External
-            href='https://github.com/timelpatel/Infinity/tree/master/src/asset/font/_style.scss'
+            href='https://github.com/timelpatel/BCD/tree/master/src/asset/font/_style.scss'
             text='See font example on Github'
           />
 
@@ -186,7 +186,7 @@ const AssetPage = () => (
             text='The grid system code can be a single styling file in the root of the asset directory. Generally used in Pages but can also be used at Component level. Its wise to allow componenets to consume the full width of their container to allow for adaptive or responsive layouts.'
           />
           <Button__Tertiary_External
-            href='https://github.com/timelpatel/Infinity/tree/master/src/asset/grid.scss'
+            href='https://github.com/timelpatel/bcd/tree/master/src/asset/grid.scss'
             text='See grid example on Github'
           />
 

@@ -10,7 +10,7 @@ const Header_Footer__Header = () => (
   <Container__Header>
     <div className={layout.typography__logo}>
       <Typography__Logo>
-        <Link to='/'>Infinity</Link>
+        <Link to='/'>BCD</Link>
       </Typography__Logo>
     </div>
 

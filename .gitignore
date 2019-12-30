@@ -1,8 +1,8 @@
+/dist
 .DS_Store
 *.DS_Store
 /node_modules
 *.orig
-/public
 /.sass-cache
 .Thumbs.db
 *.Thumbs.db

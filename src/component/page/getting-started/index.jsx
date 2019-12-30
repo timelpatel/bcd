@@ -21,7 +21,7 @@ const GettingStartedPage = () => (
             text='Getting Started'
           />
           <Typography__Body_Copy
-            text='The Infinity design system is easy to setup. It is all about organisation using categories and does not care about the technology stack in use.'
+            text='The BCD system is easy to setup. It is all about organisation using categories and does not care about the technology stack in use.'
           />
         </div>
       </div>
@@ -31,7 +31,7 @@ const GettingStartedPage = () => (
       <div className={grid.row}>
         <div className={grid.col + ' ' + grid.col9}>
           <Typography__Section_Title
-            text='Add Infinity folders'
+            text='Add BCD folders'
           />
           <Typography__Body_Copy
             text='Let&#39;s start by creating some folders.'
@@ -56,7 +56,7 @@ const GettingStartedPage = () => (
           <Typography__Bullet_List
             listItems={
               [
-                {id: 1, text:'Add Infinity Folders'},
+                {id: 1, text:'Add BCD Folders'},
                 {id: 2, text:'Create Blocks'},
                 {id: 3, text:'Add Assets to Blocks'},
                 {id: 4, text:'Create a Module'},
@@ -86,7 +86,7 @@ const GettingStartedPage = () => (
             text='Basic principles'
           />
           <Typography__Body_Copy
-            text='Next we add the component itself. In the example below, we will see how Infinity uses folder names within component code.'
+            text='Next we add the component itself. In the example below, we will see how BCD uses folder names within component code.'
           />
           <Typography__Code>
             src/component/block/button/primary/index.html<br /><br />
@@ -216,7 +216,7 @@ const GettingStartedPage = () => (
             text='Add Behaviours'
           />
           <Typography__Body_Copy
-            text='Behaviours can be inserted at various points of the system depending on the component functionality. As you start building you&#39;re own application, this as with other parts of Infinity will become clearer.'
+            text='Behaviours can be inserted at various points of the system depending on the component functionality. As you start building you&#39;re own application, this as with other parts of BCD will become clearer.'
           />
 
           <Typography__Sub_Heading
@@ -278,11 +278,11 @@ const GettingStartedPage = () => (
             text='Further reading'
           />
           <Typography__Body_Copy>
-            See how the Infinity website is scructured using the system at the following URL...<br />
+            See how the BCD website is scructured using the system at the following URL...<br />
             <a
-              href='https://github.com/timelpatel/infinity/tree/master/src'
+              href='https://github.com/timelpatel/bcd/tree/master/src'
               target='_blank'
-            >https://github.com/timelpatel/infinity/tree/master/src</a>
+            >https://github.com/timelpatel/bcd/tree/master/src</a>
           </Typography__Body_Copy>
         </div>
       </div>
